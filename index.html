@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>遊戲資源檢視器 · Game Asset Explorer</title>
+<meta name="description" content="遊戲資源線上檢視與搜尋：怪物、NPC、技能、道具、地圖動畫與圖示。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">🍁</span>
+    <div>
+      <h1>遊戲資源檢視器</h1>
+      <p class="sub" id="brandSub">載入索引中…</p>
+    </div>
+  </div>
+
+  <div class="searchwrap">
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+           placeholder="搜尋名稱、描述或 ID…  例如「嫩寶」「精靈的祝福」或 100000">
+    <button id="qClear" class="qclear" title="清除" hidden>✕</button>
+  </div>
+
+  <button id="aboutBtn" class="ghostbtn" title="說明">?</button>
+</header>
+
+<nav class="cats" id="cats" aria-label="分類"></nav>
+
+<main>
+  <div id="status" class="status">載入中…</div>
+
+  <div id="results" class="grid" role="list"></div>
+
+  <button id="more" class="morebtn" hidden>載入更多</button>
+
+  <div id="empty" class="empty" hidden>
+    <p class="big">找不到符合的資源</p>
+    <p class="small">試試更短的關鍵字，或切換上方分類。</p>
+  </div>
+</main>
+
+<!-- ---------------------------------------------------------------- detail -->
+<div id="scrim" class="scrim" hidden></div>
+<aside id="detail" class="detail" hidden aria-label="資源詳情">
+  <button id="dClose" class="dclose" title="關閉">✕</button>
+
+  <div class="dhead">
+    <div class="dicon" id="dIcon"></div>
+    <div class="dtitle">
+      <div class="dcat" id="dCat"></div>
+      <h2 id="dName"></h2>
+      <div class="did" id="dId"></div>
+    </div>
+  </div>
+
+  <div class="danim" id="dAnim" hidden>
+    <canvas id="dCanvas" width="320" height="240"></canvas>
+    <div class="danimctl">
+      <button id="dPlay" class="playbtn" title="播放 / 暫停">⏸</button>
+      <select id="dSeq" class="seqsel"></select>
+      <label class="fps">FPS <input id="dFps" type="number" min="1" max="60" value="12"></label>
+      <label class="chk"><input id="dLoop" type="checkbox" checked> 循環</label>
+    </div>
+  </div>
+
+  <div class="dsec" id="dDescSec" hidden>
+    <h3>說明</h3>
+    <p id="dDesc" class="ddesc"></p>
+  </div>
+
+  <div class="dsec" id="dFieldsSec" hidden>
+    <h3>屬性</h3>
+    <dl id="dFields" class="fields"></dl>
+  </div>
+
+  <div class="dsec" id="dAnimsSec" hidden>
+    <h3>動畫序列 <span class="muted" id="dAnimCount"></span></h3>
+    <div id="dAnimList" class="animlist"></div>
+  </div>
+
+  <div class="dsec">
+    <h3>下載</h3>
+    <p class="dpath" id="dPath"></p>
+    <a id="dDrive" class="dlbtn" target="_blank" rel="noopener noreferrer">
+      ⬇ 前往雲端下載（Google Drive）
+    </a>
+    <p class="hint" id="dDriveHint"></p>
+  </div>
+</aside>
+
+<!-- ----------------------------------------------------------------- about -->
+<div id="about" class="modal" hidden>
+  <div class="modalbox">
+    <button id="aboutClose" class="dclose" title="關閉">✕</button>
+    <h2>關於這個網站</h2>
+    <p>這是一個<strong>線上遊戲資源檢視器</strong>。索引與圖示由本機的遊戲資源檔
+       （<code>Data/</code>）直接解析產生，包含繁體中文名稱、說明、圖示與動畫影格。</p>
+    <ul>
+      <li><b>搜尋</b>：輸入名稱、說明關鍵字或數字 ID，皆可即時比對。</li>
+      <li><b>動畫</b>：有動畫的資源可直接於詳情頁播放，可切換序列與 FPS。</li>
+      <li><b>下載</b>：原始檔請至對應的雲端資料夾下載。</li>
+    </ul>
+    <p class="hint">本網站僅為資源瀏覽用途，素材版權歸原廠所有。</p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

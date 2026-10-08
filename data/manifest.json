@@ -1,0 +1,150 @@
+{
+  "generated": "2026-10-08 09:38:39Z",
+  "source": "local WZ archives",
+  "categories": [
+    {
+      "key": "mob",
+      "label": "怪物",
+      "count": 12015,
+      "withIcon": 8399,
+      "withAnim": 1118
+    },
+    {
+      "key": "npc",
+      "label": "NPC",
+      "count": 15830,
+      "withIcon": 11883,
+      "withAnim": 0
+    },
+    {
+      "key": "skill",
+      "label": "技能",
+      "count": 13638,
+      "withIcon": 13198,
+      "withAnim": 0
+    },
+    {
+      "key": "consume",
+      "label": "消耗品",
+      "count": 30471,
+      "withIcon": 25961,
+      "withAnim": 0
+    },
+    {
+      "key": "cash",
+      "label": "現金道具",
+      "count": 4696,
+      "withIcon": 3686,
+      "withAnim": 188
+    },
+    {
+      "key": "etcitem",
+      "label": "其他道具",
+      "count": 7447,
+      "withIcon": 0,
+      "withAnim": 0
+    },
+    {
+      "key": "install",
+      "label": "安裝道具",
+      "count": 6044,
+      "withIcon": 5851,
+      "withAnim": 0
+    },
+    {
+      "key": "special",
+      "label": "特殊道具",
+      "count": 2990,
+      "withIcon": 0,
+      "withAnim": 0
+    },
+    {
+      "key": "pet",
+      "label": "寵物",
+      "count": 1072,
+      "withIcon": 1069,
+      "withAnim": 1072
+    },
+    {
+      "key": "equip",
+      "label": "裝備",
+      "count": 64761,
+      "withIcon": 31147,
+      "withAnim": 2140
+    },
+    {
+      "key": "map",
+      "label": "地圖",
+      "count": 20335,
+      "withIcon": 262,
+      "withAnim": 10
+    },
+    {
+      "key": "quest",
+      "label": "任務",
+      "count": 25037,
+      "withIcon": 0,
+      "withAnim": 0
+    },
+    {
+      "key": "effect",
+      "label": "特效",
+      "count": 135,
+      "withIcon": 118,
+      "withAnim": 31
+    },
+    {
+      "key": "reactor",
+      "label": "機關",
+      "count": 1263,
+      "withIcon": 0,
+      "withAnim": 178
+    },
+    {
+      "key": "morph",
+      "label": "變身",
+      "count": 357,
+      "withIcon": 0,
+      "withAnim": 264
+    },
+    {
+      "key": "taming",
+      "label": "騎乘",
+      "count": 2213,
+      "withIcon": 0,
+      "withAnim": 21
+    },
+    {
+      "key": "ui",
+      "label": "介面",
+      "count": 182,
+      "withIcon": 0,
+      "withAnim": 31
+    }
+  ],
+  "counts": {
+    "mob": 12015,
+    "npc": 15830,
+    "skill": 13638,
+    "consume": 30471,
+    "cash": 4696,
+    "etcitem": 7447,
+    "install": 6044,
+    "special": 2990,
+    "pet": 1072,
+    "equip": 64761,
+    "map": 20335,
+    "quest": 25037,
+    "effect": 135,
+    "reactor": 1263,
+    "morph": 357,
+    "taming": 2213,
+    "ui": 182
+  },
+  "total": 208486,
+  "drive": {
+    "folder": "https://drive.google.com/drive/folders/1ELjH9UWew4iBG1H7hSTQc20CJr2-9ppa?usp=drive_link",
+    "perCategory": {}
+  },
+  "driveNote": "原始檔請至雲端資料夾下載；本站僅提供瀏覽與預覽。"
+}
